@@ -6,6 +6,6 @@ import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("https://utest.com/")
 public class UtestPage extends PageObject {
-    public static final Target BTN_BECOME = Target.the("Become a uTester button")
+    public static final Target BECOME_BUTTON = Target.the("Become a uTester button")
             .locatedBy("//*[@id=\"mainContent\"]/div[1]/div[2]/div/a");
 }

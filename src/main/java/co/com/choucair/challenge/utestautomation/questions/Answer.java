@@ -20,17 +20,13 @@ public class Answer implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean result;
         try {
-            Thread.sleep(7000);
+            Thread.sleep(9000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        String nameCourse = Text.of(AccountPage.WELCOME_TEXT).viewedBy(actor).asString();
-        if (question.equals(nameCourse)) {
-            result = true;
-        } else {
-            result = false;
-        }
+        String welcomeMessage = Text.of(AccountPage.WELCOME_TEXT).viewedBy(actor).asString();
+        result = question.equals(welcomeMessage);
         return result;
     }
 }

@@ -8,7 +8,7 @@ Feature: Challenge Choucair
     Given that Dario wants to register as a new user
     When he fill the basic information form
       | name | lastname | email               | month | day | year | language |
-      | Juan | Carrillo | juan77390@correo.es | May   | 23  | 2000 | spanish  |
+      | Juan | Carrillo | juan77391@correo.es | May   | 23  | 2000 | spanish  |
     And he fill the location information form
       | city | postal | country |
       | Cali | 110851 | Ecuador |
@@ -16,8 +16,8 @@ Feature: Challenge Choucair
       | computer | version | pcLanguage | mobile | model | os         |
       | Linux    | Ubuntu  | Bulgarian  | Wiko   | Y61   | Android 10 |
     And he create a password and accept the terms and conditions
-      | password   |
-      | Pas13Qd@df |
+      | password    |
+      | P@sword#138 |
     Then he see the welcome message
       | welcomeMessage                                                          |
       | Welcome to the world's largest community of freelance software testers! |

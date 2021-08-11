@@ -1,10 +1,19 @@
-webdriver.driver=chrome
-webdriver.chrome.driver=src/test/resources/driver/chromedriver.exe
-serenity.project.name = Demo Project using Serenity and Cucumber
-chrome.switches=--start-maximized
-webdriver.timeouts.implicitlywait = 10000
-serenity.take.screenshots=AFTER_EACH_STEP
-serenity.verbose.steps=FALSE
-serenity.report.encoding=UTF8
-feature.file.encoding =UTF8
-serenity.test.root=net.thucydides.showcase.cucumber.junit
+# Autor: Dario Daza
+@stories
+Feature: Challenge Choucair
+  As a new user, I want to create a new account at the Utest page
+
+  @scenario1
+  Scenario: Create a new user
+    Given that Dario wants to register as a new user
+      #| strUser   | strPassword |
+      #| TuUsuario | TuClave |
+    When he fill the personal information form
+    And he fill the location information form
+    And  he fill the device information form
+    And he create a password and accept the terms and conditions
+      #| strCourse               |
+      #| Metodologia Bancolombia |
+    Then he see the welcome message
+      #| strCourse               |
+      #| Metodologia Bancolombia |
